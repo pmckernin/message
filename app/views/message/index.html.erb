@@ -1,0 +1,23 @@
+<h1>Posts</h1>
+<div class="container">
+  <div class="row">
+    <div class = "col-md-6 col-md-offset-3">
+      <% @posts.each do |post| %>
+        <div>
+        <img src="<%= post.image_url %>">
+        <h1><%= post.title %></h1>
+        <p><%= post.contents %></p>
+
+          <a href="/message/destroy/<%= post.id %>"> Destroy</a> |
+          <a href="/message/<%= post.id %>/edit">Edit</a>|
+          <a href="/message/<%= post.id %>">Show</a>
+
+
+          </div>
+        <%end %>
+
+
+
+    </div>
+  </div>
+</div>

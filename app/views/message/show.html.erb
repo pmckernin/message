@@ -1,0 +1,8 @@
+<img src="<%= @post.image_url %>">
+<h1><%= @post.title %></h1>
+<p><%= @post.contents %></p>
+
+  <a href="/message/destroy/<%= @post.id %>"> Destroy</a> |
+  <a href="/message/<%= @post.id %>/edit">Edit</a>|
+  <a href="/messages">Index</a>
+
